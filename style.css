@@ -62,18 +62,27 @@ button:hover {
 
 /* Value Prop */
 .vp {
-  display: block;
-  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-image: url(images/background.png);
   height: 80px;
   width: 100%;
 }
 
-h1 {
+.valuep {
   color: white;
-  text-align: center;
+  font-size: 30px;
+  align-self: center;
 }
 
+.homebtn {
+  margin-left: 5px;;
+}
+
+.cartbtn {
+  margin-right: 5px;
+}
 
 /* hero */
 .hero {
