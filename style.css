@@ -42,11 +42,10 @@ header {
 }
 
 .nav__links li a:hover {
-    color: #CB1D27;
+    color: #990c00;
 }
 
 button {
-    margin-left: 20px;
     padding: 9px 25px;
     background-color: rgba(203, 29, 39, 1);
     border: none;
@@ -56,7 +55,11 @@ button {
 }
 
 button:hover {
-    background-color: rgba(203, 29, 39, 0.8);
+    background-color: rgba(244, 154, 6, 1);
+}
+
+.cta {
+  margin-left: 20px;
 }
 /* end of nav */
 
