@@ -164,6 +164,12 @@ h2 {
   }
    
   .like-btn {
+    width: 18px;
+    height: 17px;
+    background: url(images/pencil-edit-button.png) no-repeat center;
+    margin-left: 5px;
+  }
+  /* .like-btn {
     position: absolute;
     top: 9px;
     left: 15px;
@@ -172,7 +178,7 @@ h2 {
     height: 60px;
     background-size: 2900%;
     background-repeat: no-repeat;
-  }
+  } */
 
   .is-active {
     animation-name: animate;
@@ -245,6 +251,7 @@ h2 {
   }
   .plus-btn img {
     margin-top: 2px;
+    padding-right: 3px;
   }
    
   button:focus,
@@ -299,8 +306,6 @@ h2 {
   text-align: center;
   margin: 1%;
 }
-}
-
 
  .shopping-cart2 {
     width: 70%;
