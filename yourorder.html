@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="checkoutBody">
+    <head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+</head>
+
+    <body class="checkoutBody">
+<!-- nav -->
+<header>
+    <img src="images/torchyslogo.png" class="logo" alt="logo">
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">LOCATION</a></li>
+            <li><a href="#">ACCOUNT</a></li>
+        </ul>     
+    </nav>
+    <a class="cta" href="#"><button>ORDER ONLINE</button></a>
+</header>
+<!-- end of nav -->
+
+<div class="vp">
+    <a href="#"><img src="images/home.png" class="homebtn"></a>
+        <h1>YOUR ORDER</h1>
+    <a href="#"><img src="images/cart.png" class="cartbtn"></a>
+    </div>
+
+<!-- Shopping Cart -->
+<div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+      ORDER SUMMARY
+    </div>
+
+    <!-- Product #1 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="images/seitanslover2.png" alt="seitanslover" class="menuPics"/>
+      </div>
+
+      <div class="description">
+        <span>Seitan's Lover</span>
+        <span>Taco 1</span>
+        <span>Taco Detials</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="plus" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="minus" />
+        </button>
+      </div>
+
+      <div class="total-price">$4.00</div>
+    </div>
+
+    <!-- Product #2 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="images/devilqueso2.png" alt="theSinner" class="menuPics"/>
+      </div>
+
+      <div class="description">
+        <span>The Devil is in the Queso</span>
+        <span>Vegan Queso</span>
+        <span>Queso Details</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="plus" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="minus" />
+        </button>
+      </div>
+
+      <div class="total-price">$5.00</div>
+    </div>
+
+    <!-- Product #3 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="images/mexcoke2.png" alt="fallenAngel" class="menuPics" />
+      </div>
+
+      <div class="description">
+        <span>Mexican Coke</span>
+        <span>Coca-Cola</span>
+        <span>Drink Details</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="plus" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="minus" />
+        </button>
+      </div>
+
+      <div class="total-price">$4.00</div>
+    </div>
+
+    <div class="total" class="shopping-cart">
+        $13.00
+      </div>
+  </div>
+
+
+
+<!-- button -->
+<div  style="text-align: center">
+<a href="#"><button>CHECK OUT</button></a>
+</div>
+<br>
+
+  <!-- JavaScript -->
+      <script type="text/javascript">
+        $('.minus-btn').on('click', function(e) {
+              e.preventDefault();
+              var $this = $(this);
+              var $input = $this.closest('div').find('input');
+              var value = parseInt($input.val());
+  
+              if (value > 1) {
+                  value = value - 1;
+              } else {
+                  value = 0;
+              }
+  
+          $input.val(value);
+  
+          });
+  
+          $('.plus-btn').on('click', function(e) {
+              e.preventDefault();
+              var $this = $(this);
+              var $input = $this.closest('div').find('input');
+              var value = parseInt($input.val());
+  
+              if (value < 100) {
+                value = value + 1;
+              } else {
+                  value =100;
+              }
+  
+              $input.val(value);
+          });
+  
+        $('.like-btn').on('click', function() {
+          $(this).toggleClass('is-active');
+        });
+      </script>
+
+    </body>
+  </html>
