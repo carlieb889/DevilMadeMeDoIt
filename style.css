@@ -242,8 +242,8 @@ h2 {
   }
    
   button[class*=btn] {
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
     background-color: #E1E8EE;
     border-radius: 6px;
     border: none;
@@ -292,9 +292,9 @@ h2 {
       text-align: center;
       margin: 6px 0;
     }
-    .buttons {
+    /* .buttons {
       margin-right: 20px;
-    }
+    } */
   }
 /* end of shopping cart */
 
@@ -306,8 +306,20 @@ h2 {
  }
 
  .checkOutBtn2 {
+  padding: 7px 1px;
+  flex-wrap: nowrap;
+  width: 50%;
   text-align: center;
   margin: 1%;
+  background-color: RGBA(244,154,6,1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.checkOutBtn2:hover {
+  background-color: RGBA(144,12,0,1);
 }
 
  .shopping-cart2 {
@@ -320,7 +332,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   form {
