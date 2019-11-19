@@ -16,16 +16,24 @@ li, a, button {
 }
 
 header {
-    display: flex;
-    /* justify-content: flex-end; */
-    align-items: center;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
     padding: 30px 10%;
     background-color: #323232;
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
     cursor: pointer;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.centerNav {
+  display: flex;
+  justify-content: center;
 }
 
 .nav__links {
