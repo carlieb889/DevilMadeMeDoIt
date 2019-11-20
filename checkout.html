@@ -2,6 +2,7 @@
 <html class="checkoutBody">
 
 <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
 </head>
@@ -47,14 +48,30 @@
         <div class="checkOutBtn"></div>
         <h2>CONTINUE AS GUEST</h2><br>
         <h3>PAYMENT INFORMATION</h3><br>
-        <form>
-            <input type="text" id="cardNumber" name="cardNumber" value="Card Number"><br>
-            <br>
-            <input type="text" id="zip" name="zip" value="Zip">
-            <input type="text" id="exp" name="exp" value="MM/YY">
-            <input type="text" id="cvn" name="cvn" value="CVN">
-        </form>
-        </div><br>
+
+        <section class="cForm"><form>
+            <div class="form-row">
+            <div class="form-group col-md-6" >
+              <label for="inputAddress2">Card Number</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">Zip Code</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputDate">Exp Date</label>
+                <input type="text" class="form-control" id="inputDate" placeholder="MMYY">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">CVN</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+          </form>
+          </section>
+    
 
         <div style="text-align: center" class="checkOutBtn2">
             <a href="#"><button class="checkOutBtn2">PAY WITH GOOGLE PAY</button></a>
@@ -75,6 +92,12 @@
 <br><br>
     </section>
 
+
+
+<!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

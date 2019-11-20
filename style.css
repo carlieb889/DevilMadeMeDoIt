@@ -371,16 +371,10 @@ button:hover {
     font-size: 20px;
   }
 
-  form {
-      text-align: left;
-    }
-
-  input {
-    background: #FFFFFF;
-    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-    border-radius: 3px;
-    border-color: black;
-    height: 30px;
-  }
+.cForm {
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
+}
 
 
